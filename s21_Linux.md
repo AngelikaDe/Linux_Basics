@@ -1,13 +1,13 @@
-## Part 1. Installation of the OS
+## Part 1. Installation of the OS ***
 * Ubuntu version using `"cat /etc/issue"` coomand
 ![Part_1](screenshots/Part_1.png)
-=
+---
 ## Part 2. Creating a user
 * Creating new user using `"useradd"` command
 ![Part_2](screenshots/Part_2.png)
 * User is in a group adm
 ![Part_2](screenshots/Part_2_2.png)
-=
+---
 ## Part 3. Setting up the OS network
 * Creating user user_1
 ![Part_3]
