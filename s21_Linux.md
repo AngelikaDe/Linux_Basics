@@ -85,7 +85,32 @@ The `"Local Address"` and "External Address" columns tell you which hosts and po
 The `Status column` tells you what state the listed sockets are in. The TCP protocol defines states, including "LISTENING" (wait for some external computer to contact us)
 ![Part_8](screenshots/Part_8_5.png)
 ## Part 9. Installing and using the top, htop utilities
-
+* `Top` command:
+uptime - 2:34
+number of authorised users - 1
+total system load - 0.00
+total number of processes - 97
+cpu load - 0.0 us
+memory load - 3924.3
+![Part_10](screenshots/Part_9_1.png)
+pid of the process with the highest memory usage - 1306, 781
+pid of the process taking the most CPU time - 3454
+![Part_10](screenshots/Part_9_2.png)
+* `htop` command:
+sorted by PID
+![Part_10](screenshots/Part_9_3.png)
+sorted by PERCENT_CPU
+![Part_10](screenshots/Part_9_4.png)
+sorted by PERCENT_MEM
+![Part_10](screenshots/Part_9_5.png)
+sorted by TIME
+![Part_10](screenshots/Part_9_6.png)
+filtered for sshd process
+![Part_10](screenshots/Part_9_7.png)
+with the syslog process found by searching
+![Part_10](screenshots/Part_9_8.png)
+with hostname, clock and uptime output added
+![Part_10](screenshots/Part_9_9.png)
 
 
 
