@@ -85,7 +85,7 @@ The `"Local Address"` and "External Address" columns tell you which hosts and po
 The `Status column` tells you what state the listed sockets are in. The TCP protocol defines states, including "LISTENING" (wait for some external computer to contact us)
 ![Part_8](screenshots/Part_8_5.png)
 ## Part 9. Installing and using the top, htop utilities
-* `Top` command:
+* `top` command:
 uptime - 2:34
 number of authorised users - 1
 total system load - 0.00
