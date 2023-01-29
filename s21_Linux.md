@@ -82,47 +82,47 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 * Sshd process using the `ps` command
 ![Part_8](screenshots/Part_8_4.png)
 ### `Netstat -tan` command
-## Keys explaned:
+#### Keys explaned:
 * -t - filter TCP protocol
 * -a - all ports
 * -n - shows ip instead of host, port number instead of name, UID instead of username.
-## Table explained:
+#### Table explained:
 * The `"Proto"` column tells us whether the specified socket is TCP or UDP. These are network protocols.
 * The `"Recv-Q"` and `"Send-Q"` columns tell us how much data is queued for this socket, waiting to be read (Recv-Q) or sent (Send-Q).
 * The `"Local Address"` and "External Address" columns tell you which hosts and ports the listed sockets are connected to. The local end is always on the computer on which you run netstat (in the example, the computer is called "Trafalgar"), and the external end is on another computer (may be somewhere on the local network or somewhere on the Internet).
 * The `Status column` tells you what state the listed sockets are in. The TCP protocol defines states, including "LISTENING" (wait for some external computer to contact us)
-## 0.0.0.0 explained:
+#### 0.0.0.0 explained:
 * Foreign address 0.0.0.0 - no one connected
 * Local address 0.0.0.0 - listening on all interfaces 
 ![Part_8](screenshots/Part_8_5.png)
 ---
 ## Part 9. Installing and using the top, htop utilities
 ### `top` command:
-    * uptime - 2:34
-    * number of authorised users - 1
-    * total system load - 0.00
-    * total number of processes - 97
-    * cpu load - 0.0 us
-    * memory load - 3924.3
-    ![Part_9](screenshots/Part_9_1.png)
-    * pid of the process with the highest memory usage - 1306, 781
-    * pid of the process taking the most CPU time - 3454
+* uptime - 2:34
+* number of authorised users - 1
+* total system load - 0.00
+* total number of processes - 97
+* cpu load - 0.0 us
+* memory load - 3924.3
+![Part_9](screenshots/Part_9_1.png)
+* pid of the process with the highest memory usage - 1306, 781
+* pid of the process taking the most CPU time - 3454
 ![Part_9](screenshots/Part_9_2.png)
 ### `htop` command:
-    * sorted by PID
-    ![Part_9](screenshots/Part_9_3.png)
-    * sorted by PERCENT_CPU
-    ![Part_9](screenshots/Part_9_4.png)
-    * sorted by PERCENT_MEM
-    ![Part_9](screenshots/Part_9_5.png)
-    * sorted by TIME
-    ![Part_9](screenshots/Part_9_6.png)
-    * filtered for sshd process
-    ![Part_9](screenshots/Part_9_7.png)
-    * with the syslog process found by searching
-    ![Part_9](screenshots/Part_9_8.png)
-    * with hostname, clock and uptime output added
-    ![Part_9](screenshots/Part_9_9.png)
+* sorted by PID
+![Part_9](screenshots/Part_9_3.png)
+* sorted by PERCENT_CPU
+![Part_9](screenshots/Part_9_4.png)
+* sorted by PERCENT_MEM
+![Part_9](screenshots/Part_9_5.png)
+* sorted by TIME
+![Part_9](screenshots/Part_9_6.png)
+* filtered for sshd process
+![Part_9](screenshots/Part_9_7.png)
+* with the syslog process found by searching
+![Part_9](screenshots/Part_9_8.png)
+* with hostname, clock and uptime output added
+![Part_9](screenshots/Part_9_9.png)
 ---
 ## Part 10. Using the fdisk utility
 * Running `fdisk -l` command
