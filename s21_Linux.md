@@ -92,28 +92,65 @@ total system load - 0.00
 total number of processes - 97
 cpu load - 0.0 us
 memory load - 3924.3
-![Part_10](screenshots/Part_9_1.png)
+![Part_9](screenshots/Part_9_1.png)
 pid of the process with the highest memory usage - 1306, 781
 pid of the process taking the most CPU time - 3454
-![Part_10](screenshots/Part_9_2.png)
+![Part_9](screenshots/Part_9_2.png)
 * `htop` command:
 sorted by PID
-![Part_10](screenshots/Part_9_3.png)
+![Part_9](screenshots/Part_9_3.png)
 sorted by PERCENT_CPU
-![Part_10](screenshots/Part_9_4.png)
+![Part_9](screenshots/Part_9_4.png)
 sorted by PERCENT_MEM
-![Part_10](screenshots/Part_9_5.png)
+![Part_9](screenshots/Part_9_5.png)
 sorted by TIME
-![Part_10](screenshots/Part_9_6.png)
+![Part_9](screenshots/Part_9_6.png)
 filtered for sshd process
-![Part_10](screenshots/Part_9_7.png)
+![Part_9](screenshots/Part_9_7.png)
 with the syslog process found by searching
-![Part_10](screenshots/Part_9_8.png)
+![Part_9](screenshots/Part_9_8.png)
 with hostname, clock and uptime output added
-![Part_10](screenshots/Part_9_9.png)
-
-
-
-
-
- 
+![Part_9](screenshots/Part_9_9.png)
+## Part 10. Using the fdisk utility
+* Running `fdisk -l` command
+name of the hard disk  - /sda
+capacity - 40G
+number of sectors - 83886080
+![Part_10](screenshots/Part_10.png)
+## Part 11. Using the df utility
+* Running `df` command
+For the root partition(/):
+kB - kilobyte
+partition size  - 40970464kB
+space used - 7215408kB
+space free - 3164167kB
+percentage used - 19%
+![Part_11](screenshots/Part_11_1.png)
+* Running `df -Th` command
+For the root partition(/):
+file system type - ext4 aka fourth extended file system
+partition size  -  40G
+space used - 6.9G
+space free - 31G
+percentage used - 19%
+![Part_11](screenshots/Part_11_2.png)
+## Part 12. Using the du utility
+* Running `du` command
+Output the size of folders:
+/home
+![Part_12](screenshots/Part_12_1.png)
+/var
+![Part_12](screenshots/Part_12_2.png)
+/var/log
+![Part_12](screenshots/Part_12_3.png)
+/var/log (using *)
+![Part_12](screenshots/Part_12_4.png)
+## Part 13. Installing and using the ncdu utility
+* Installing ncdu utility using `sudo apt install ncdu` command
+* Output the size of folders:
+/home
+![Part_13](screenshots/Part_13_1.png)
+/var
+![Part_13](screenshots/Part_13_2.png)
+/var/log
+![Part_13](screenshots/Part_13_3.png)
