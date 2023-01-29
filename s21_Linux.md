@@ -44,7 +44,7 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 ![Part_6](screenshots/Part_6_2.png)
 ---
 ## Part 7. Installing and using text editors
-##### VIM usage:
+### VIM usage:
 - Create with saving the changes `:wq`
 ![Part_7](screenshots/Part_7_1.png)
 - Update without saving `:q!`
@@ -53,7 +53,7 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 ![Part_7](screenshots/Part_7_3.png)
 - Search and Replace`:s/search str/replace str`
 ![Part_7](screenshots/Part_7_4.png)
-##### NANO usage:
+### NANO usage:
 - Create with saving the changes `^X+Y`
 ![Part_7](screenshots/Part_7_5.png)
 - Update without saving `^X+N`
@@ -62,7 +62,7 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 ![Part_7](screenshots/Part_7_7.png)
 - Replace`^R`
 ![Part_7](screenshots/Part_7_8.png)
-##### MCEDIT usage:
+### MCEDIT usage:
 - Create with saving the changes `F2`
 ![Part_7](screenshots/Part_7_9.png)
 - Update without saving `F10`
@@ -81,20 +81,23 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 ![Part_8](screenshots/Part_8_3.png)
 * Sshd process using the `ps` command
 ![Part_8](screenshots/Part_8_4.png)
-##### `Netstat -tan` command
-* Keys explaned:
--t - filter TCP protocol
--a - all ports
--n - shows ip instead of host, port number instead of name, UID instead of username.
-* Table explained:
-    The `"Proto"` column tells us whether the specified socket is TCP or UDP. These are network protocols.
-    The `"Recv-Q"` and `"Send-Q"` columns tell us how much data is queued for this socket, waiting to be read (Recv-Q) or sent (Send-Q).
-    The `"Local Address"` and "External Address" columns tell you which hosts and ports the listed sockets are connected to. The local end is always on the computer on which you run netstat (in the example, the computer is called "Trafalgar"), and the external end is on another computer (may be somewhere on the local network or somewhere on the Internet).
-    The `Status column` tells you what state the listed sockets are in. The TCP protocol defines states, including "LISTENING" (wait for some external computer to contact us)
+### `Netstat -tan` command
+## Keys explaned:
+* -t - filter TCP protocol
+* -a - all ports
+* -n - shows ip instead of host, port number instead of name, UID instead of username.
+## Table explained:
+* The `"Proto"` column tells us whether the specified socket is TCP or UDP. These are network protocols.
+* The `"Recv-Q"` and `"Send-Q"` columns tell us how much data is queued for this socket, waiting to be read (Recv-Q) or sent (Send-Q).
+* The `"Local Address"` and "External Address" columns tell you which hosts and ports the listed sockets are connected to. The local end is always on the computer on which you run netstat (in the example, the computer is called "Trafalgar"), and the external end is on another computer (may be somewhere on the local network or somewhere on the Internet).
+* The `Status column` tells you what state the listed sockets are in. The TCP protocol defines states, including "LISTENING" (wait for some external computer to contact us)
+## 0.0.0.0 explained:
+* Foreign address 0.0.0.0 - no one connected
+* Local address 0.0.0.0 - listening on all interfaces 
 ![Part_8](screenshots/Part_8_5.png)
 ---
 ## Part 9. Installing and using the top, htop utilities
-* `top` command:
+### `top` command:
     * uptime - 2:34
     * number of authorised users - 1
     * total system load - 0.00
@@ -105,7 +108,7 @@ lo interface is a virtual interface present by default on any Linux. It is used 
     * pid of the process with the highest memory usage - 1306, 781
     * pid of the process taking the most CPU time - 3454
 ![Part_9](screenshots/Part_9_2.png)
-* `htop` command:
+### `htop` command:
     * sorted by PID
     ![Part_9](screenshots/Part_9_3.png)
     * sorted by PERCENT_CPU
@@ -129,53 +132,49 @@ number of sectors - 83886080
 ![Part_10](screenshots/Part_10.png)
 ---
 ## Part 11. Using the df utility
-* Running `df` command
-For the root partition(/):
-kB - kilobyte
-partition size  - 40970464kB
-space used - 7215408kB
-space free - 3164167kB
-percentage used - 19%
+### Running `df` command for the root partition(/):
+* kB - kilobyte
+* partition size  - 40970464kB
+* space used - 7215408kB
+* space free - 3164167kB
+* percentage used - 19%
 ![Part_11](screenshots/Part_11_1.png)
-* Running `df -Th` command
-For the root partition(/):
-file system type - ext4 aka fourth extended file system
-partition size  -  40G
-space used - 6.9G
-space free - 31G
-percentage used - 19%
+### Running `df -Th` command for the root partition(/):
+* file system type - ext4 aka fourth extended file system
+* partition size  -  40G
+* space used - 6.9G
+* space free - 31G
+* percentage used - 19%
 ![Part_11](screenshots/Part_11_2.png)
 ---
 ## Part 12. Using the du utility
 * Running `du` command
-Output the size of folders:
-/home
+#### Output the size of folders:
+* /home
 ![Part_12](screenshots/Part_12_1.png)
-/var
+* /var
 ![Part_12](screenshots/Part_12_2.png)
-/var/log
+* /var/log
 ![Part_12](screenshots/Part_12_3.png)
-/var/log (using *)
+* /var/log (using *)
 ![Part_12](screenshots/Part_12_4.png)
 ---
 ## Part 13. Installing and using the ncdu utility
 * Installing ncdu utility using `sudo apt install ncdu` command
-* Output the size of folders:
-/home
+* Running `ncdu` command
+#### Output the size of folders:
+* /home
 ![Part_13](screenshots/Part_13_1.png)
-/var
+* /var
 ![Part_13](screenshots/Part_13_2.png)
-/var/log
+* /var/log
 ![Part_13](screenshots/Part_13_3.png)
 ---
 ## Part 14. Working with system logs
-* Open for viewing:
-    1. /var/log/dmesg
-    2. /var/log/syslog
-    3. /var/log/auth.log
-The last successful login time - 17:57:57
-User name - alcestis
-Login method - pam-unix
+* Open for viewing: /var/log/dmesg, /var/log/syslog, /var/log/auth.log
+* The last successful login time - 17:57:57
+* User name - alcestis
+* Login method - pam-unix
 ![Part_14](screenshots/Part_14_1.png)
 * Restart SSHd service using `sudo systemctl restart ssh.service` command
 ![Part_14](screenshots/Part_14_2.png)
