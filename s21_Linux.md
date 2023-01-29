@@ -154,3 +154,24 @@ Output the size of folders:
 ![Part_13](screenshots/Part_13_2.png)
 /var/log
 ![Part_13](screenshots/Part_13_3.png)
+## Part 14. Working with system logs
+* Open for viewing:
+    1. /var/log/dmesg
+    2. /var/log/syslog
+    3. /var/log/auth.log
+The last successful login time - 17:57:57
+User name - alcestis
+Login method - pam-unix
+![Part_14](screenshots/Part_14_1.png)
+* Restart SSHd service using `sudo systemctl restart ssh.service` command
+![Part_14](screenshots/Part_14_2.png)
+## Part 15. Using the CRON job scheduler
+* Using the job scheduler, run the uptime command in every 2 minutes
+![Part_15](screenshots/Part_15_2.png)
+* Lines in the system logs (at least two within a given time range) about the execution
+![Part_15](screenshots/Part_15_3.png)
+* A list of current jobs for CRON
+![Part_15](screenshots/Part_15_1.png)
+![Part_15](screenshots/Part_15_2.png)
+* Remove all tasks from the job scheduler
+![Part_15](screenshots/Part_15_4.png)
