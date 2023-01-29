@@ -1,3 +1,3 @@
 ## Part 1
     * Ubuntu version
-    ![Screenshot](Part_1.png)
+    ![Screenshot](screenshots/Part_1.png)
