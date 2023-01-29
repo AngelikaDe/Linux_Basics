@@ -2,7 +2,7 @@
 * Ubuntu version using "cat /etc/issue" coomand
 ![Part_1](screenshots/Part_1.png)
 ## Part 2. Creating a user
-* Creating new user using `#ffffff "useradd"` command
+* Creating new user using `"useradd"` command
 ![Part_2](screenshots/Part_2.png)
 * User is in a group adm
 ![Part_2](screenshots/Part_2_2.png)
