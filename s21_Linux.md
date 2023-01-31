@@ -7,25 +7,27 @@
 ![Part_2](screenshots/Part_2.png)
 * User is in a group adm
 ![Part_2](screenshots/Part_2_2.png)
+![Part_2](screenshots/Part_2_3.png)
 ---
 ## Part 3. Setting up the OS network
-* Creating user user_1
-![Part_3]
 * Correct timezone for my region
-![Part_3_2]
+![Part_3_1](screenshots/Part_3_1.png)
+![Part_3_2](screenshots/Part_3_2.png)
 * Names of the neetwork interfaces
 lo interface is a virtual interface present by default on any Linux. It is used to debug network programs and run server applications on the local machine.
-![Part_3_3]
+![Part_3_3](screenshots/Part_3_3.png)
 * Ip address of the device I`m working in from DHCP server
-![Part_3_4]
+![Part_3_4](screenshots/Part_3_4.png)
 * External Ip of the gateway(ip)
-![Part_3_5]
+![Part_3_5](screenshots/Part_3_5.png)
 * Internal IP address of the gateway, aka default ip address (gw)
-![Part_3_6]
-* Manually set ip, gw, dns settings
-![Part_3_7]
+![Part_3_6](screenshots/Part_3_6.png)
+* Manually set ip, gw, dns settings using `sudo vim /etc/netplan/00-installer-config.yaml`
+![Part_3_7](screenshots/Part_3_7.png)
+![Part_3_7_1](screenshots/Part_3_7_1.png)
 * Ping 1.1.1.1 and ya.ru remote hosts
 ![Part_3_8](screenshots/Part_3_8.png)
+![Part_3_8](screenshots/Part_3_9.png)
 ---
 ## Part 4. OS Update
 * All packages updated to the latest version
@@ -79,7 +81,7 @@ lo interface is a virtual interface present by default on any Linux. It is used 
 ![Part_8](screenshots/Part_8_2.png)
 * Reset the SSHd service to port 2022
 ![Part_8](screenshots/Part_8_3.png)
-* Sshd process using the `ps` command
+* Sshd process using the `ps` command. `ps -e` command writes information to standard output about all processes, except kernel processes.
 ![Part_8](screenshots/Part_8_4.png)
 ### `Netstat -tan` command
 #### Keys explaned:
